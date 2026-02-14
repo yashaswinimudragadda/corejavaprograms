@@ -1,41 +1,55 @@
-# 🕹️ Tic-Tac-Toe (Java Console Edition)
+# 🕹️ Core Java: Tic-Tac-Toe Game
 
-A classic 3x3 Tic-Tac-Toe game built using Core Java. This project demonstrates basic game logic, board state management, and user input handling.
+A interactive, console-based **3x3 Tic-Tac-Toe** game developed in Java. This project demonstrates fundamental programming concepts including arrays, loops, conditional logic, and exception handling.
 
-## ✨ Features
-* **Two-player gameplay**: Play locally with a friend (Players X and O).
-* **Win/Draw Detection**: Automatically detects horizontal, vertical, and diagonal wins.
-* **Input Validation**: Prevents players from picking occupied slots or entering invalid data.
-* **Play Again**: Option to restart the game immediately after a match ends.
+---
+
+## 📂 Project Structure
+
+| File Name | Description |
+| :--- | :--- |
+| **`number.java`** | The main driver class containing the game board, win-check logic, and the "play again" loop. |
+
+---
 
 ## 🎮 How to Play
 
-The board is represented by numbers **1 through 9**. When it is your turn, enter the number corresponding to the slot where you want to place your mark.
+The game uses a numbered grid system (1-9). Players enter a number to place their mark (**X** or **O**) in the corresponding slot.
 
 
 
+### The Board Layout:
 | 1 | 2 | 3 |
 |---|---|---|
 | 4 | 5 | 6 |
 | 7 | 8 | 9 |
 
-1. **Player X** always goes first.
-2. Enter a number (1-9) to place your mark.
-3. The first player to get 3 in a row (up, down, across, or diagonally) wins!
-4. If all 9 squares are full and no one has 3 in a row, it's a draw.
+1. **Player X** always starts first.
+2. Enter a number between **1 and 9** to choose your slot.
+3. The game checks for a winner after every move (Horizontal, Vertical, or Diagonal).
+4. If the board is full with no winner, the game declares a **Draw**.
+5. After the game ends, type `yes` to play again or `no` to exit.
 
-## 🚀 Execution Instructions
+---
 
-### Prerequisites
-* **Java Development Kit (JDK)** 18 or higher.
-* An IDE (Eclipse, IntelliJ) or a Terminal.
+## ✨ Key Features
 
-### Running the Game
-1. Open the project in your IDE.
-2. Run `number.java`.
-3. Follow the on-screen prompts in the console.
+* **Win Detection:** Evaluates 8 different winning combinations using a `switch` case and `if-else` logic.
+* **Input Validation:** Uses `try-catch` blocks to handle `InputMismatchException`, ensuring the game doesn't crash if a user enters a non-numeric character.
+* **Slot Protection:** Prevents players from overwriting a cell that is already occupied.
+* **Replay Loop:** Uses a `do-while` loop to allow multiple rounds without restarting the program.
 
-## 🛠️ Code Structure
-* **`checkWinner()`**: Contains the logic for all 8 possible winning combinations.
-* **`printBoard()`**: Renders the current state of the 3x3 grid.
-* **`main()`**: Handles the game loop, input exceptions, and the "play again" feature.
+---
+
+## 🚀 How to Run
+
+1.  **Clone/Download** the repository.
+2.  Open your IDE (Eclipse, IntelliJ, or VS Code).
+3.  Navigate to `src/corejavaprograms/number.java`.
+4.  Right-click the file and select **Run As > Java Application**.
+
+---
+
+## 🛠️ Requirements
+* **Java Runtime:** JRE/JDK 18+
+* **IDE:** Eclipse (recommended) or any Java-supported editor.
