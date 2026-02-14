@@ -28,7 +28,3 @@ As seen in the source directory (`src/corejavaprograms`), this project consists 
 
 ---
 
-### 🚀 How to Run
-1. **Clone the Repository:**
-   ```bash
-   git clone [(https://github.com/yashaswinimudragadda/corejavaprograms.git)](https://github.com/yashaswinimudragadda/university_managent_system)
