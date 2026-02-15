@@ -10,6 +10,13 @@ This system allows a store manager to manage different types of products (Electr
 - **Stock Management:** Automatically decreases stock upon a successful sale.
 - **Dynamic Billing:** Calculates total price including category-specific GST (18% for Electronics, 5% for Clothing).
 - **Validation:** Prevents sales if stock is insufficient and ensures stock levels never go negative.
+## 📺 Project Demo
+
+See the Inventory Management System in action:
+
+<video src="https://github.com/user-attachments/assets/dd296844-eda6-43d0-adb5-0e17ae7c9147" controls="controls" style="max-width: 100%;">
+  Your browser does not support the video tag.
+</video>
 
 ## 🏗️ Technical Architecture (OOP Pillars)
 This project was built to demonstrate core Java OOP concepts:
